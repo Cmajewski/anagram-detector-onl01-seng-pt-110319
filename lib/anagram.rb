@@ -6,8 +6,10 @@ attr_accessor :word
   end
 
   def match(phrase)
-    phrase.split(" ").each do |word|
-      
+    phrase.split(" ").each do |seperated_words|
+      if seperated_word.split(" ").sort==word.split(" ").sort
+        seperated_word
+      end
     end
   end
 
