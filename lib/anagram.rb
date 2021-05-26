@@ -9,6 +9,7 @@ attr_accessor :word
 
   def match(phrase)
     anagram=[]
+    binding.pry
     phrase.each do |seperated_word|
       if seperated_word.split(" ").sort==word.split(" ").sort
         anagram<<seperated_word
