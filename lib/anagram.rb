@@ -10,6 +10,7 @@ attr_accessor :word
     phrase.each do |seperated_word|
       if seperated_word.split(" ").sort==word.split(" ").sort
         anagram<<seperated_word
+        binding.pry
       end
     end
     anagram
