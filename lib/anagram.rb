@@ -10,7 +10,7 @@ attr_accessor :word
   def match(phrase)
     phrase.select do |seperated_word|
     seperated_word.split(" ").sort==word.split(" ").sort
-    
+
     end
   end
 
