@@ -6,9 +6,10 @@ attr_accessor :word
   end
 
   def match(phrase)
+    anagram=[]
     phrase.each do |seperated_word|
       if seperated_word.split(" ").sort==word.split(" ").sort
-        seperated_word
+        anagram<<seperated_word
       end
     end
   end
