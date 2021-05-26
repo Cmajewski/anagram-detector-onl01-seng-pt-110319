@@ -8,15 +8,10 @@ attr_accessor :word
   end
 
   def match(phrase)
-    anagram=[]
-    binding.pry
-    phrase.each do |seperated_word|
-      if seperated_word.split(" ").sort==word.split(" ").sort
-        anagram<<seperated_word
-        binding.pry
-      end
+    phrase.select do |seperated_word|
+    seperated_word.split(" ").sort==word.split(" ").sort
+    
     end
-    anagram
   end
 
 end
