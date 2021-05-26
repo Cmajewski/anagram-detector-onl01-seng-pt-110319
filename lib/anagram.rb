@@ -12,6 +12,7 @@ attr_accessor :word
         anagram<<seperated_word
       end
     end
+    anagram
   end
 
 end
